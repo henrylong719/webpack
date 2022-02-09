@@ -6,7 +6,7 @@ module.exports = merge(common, {
   mode: 'development',
   // output file path
   output: {
-    filename: 'main.[contenthash].js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'images/[name][ext]',
   },
