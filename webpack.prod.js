@@ -1,12 +1,15 @@
 const path = require('path');
 const common = require('./webpack.common.js');
 const { merge } = require('webpack-merge');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
   // output file path
   output: {
+    filename: 'main.[hash].js',
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.[contenthash].js',
+    assetModuleFilename: './imgs/[name].[hash].[ext]',
   },
+  plugins: [new CleanWebpackPlugin()],
 });
