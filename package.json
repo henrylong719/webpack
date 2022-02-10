@@ -21,21 +21,23 @@
   "homepage": "https://github.com/henrylong719/webpack#readme",
   "devDependencies": {
     "bootstrap": "^4.3.1",
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "jquery": "^3.6.0",
+    "mini-css-extract-plugin": "^2.5.3",
     "node-sass": "^7.0.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
     "popper.js": "^1.16.1",
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.1",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.3",
     "webpack-merge": "^5.8.0"
   },
-  "dependencies": {
-    "clean-webpack-plugin": "^4.0.0"
-  }
+  "dependencies": {}
 }
